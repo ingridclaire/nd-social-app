@@ -18,14 +18,14 @@ function Sidebar() {
         </NewMessage>
       </WorkspaceContainer>
       <MainChannels>
-       {sidebarItems.map(item => <MainChannelItem channel={item} />)}
+       {sidebarItems.map(item => <MainChannelItem key={item.text} channel={item} />)}
       </MainChannels>
       <ChannelsContainer>
         <NewChannelContainer>
           Channels <AddIcon />
         </NewChannelContainer>
         <ChannelsList>
-          {channelData.map(item => <Channel info={item} />)}
+          {channelData.map(item => <Channel key={item.name} info={item} />)}
         </ChannelsList>
       </ChannelsContainer>
     </Container>
