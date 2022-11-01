@@ -26,11 +26,13 @@ function Header() {
 }
 
 export const Container = styled.div`
-  background: purple;
+  background: #3F0E40;
   color: white;
   display: flex;
   justify-content: center;
   position: relative;
+  box-shadow: 0 1px 0 0 rgb(255 255 255 / 10%);
+  z-index: 10;
 `;
 
 export const Main = styled.div`
